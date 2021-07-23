@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(css|scss)$/,
+        test: /\.(css|scss|less)$/,
         use: [
           'style-loader',
           {
@@ -26,6 +26,14 @@ module.exports = {
             },
           },
           'sass-loader',
+          {
+            loader: 'less-loader',
+            options: {
+              lessOptions: {
+                javascriptEnabled: true,
+              },
+            },
+		      },
         ],
       },
     ],

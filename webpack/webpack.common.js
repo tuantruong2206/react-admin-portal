@@ -71,7 +71,7 @@ module.exports = {
       defaultAttribute: 'async',
     }),
     new ESLintPlugin({
-      extensions: ['js', 'jsx', 'ts', 'tsx'],
+      extensions: ['js', 'jsx', 'ts', 'tsx', '.less'],
       fix: true,
       emitWarning: process.env.NODE_ENV !== 'production',
     }),
